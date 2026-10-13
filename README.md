@@ -25,16 +25,6 @@ A simple, modern countdown timer built with **HTML5**, **CSS3**, and **JavaScrip
 
 ## 🚀 Deployment Configuration
 
-### Local Run
-Open `index.html` directly in your browser, or run a local server:
-```bash
-# Using Python
-python -m http.server 3000
-
-# Using Node.js
-npx serve .
-```
-
 ### Hosting (GitHub Pages / Vercel / Netlify)
 - **GitHub Pages:** Go to repository **Settings > Pages** and select `main` branch `/root`.
 - **Vercel / Netlify:** Import the repository as a static site (Publish directory: `.`).
