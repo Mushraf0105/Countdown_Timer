@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="timer-container">
+    <header class="header">
+      <h1>Countdown Timer</h1>
+      <p class="target-info">
+        Counting down to: <strong id="target-date-text">Loading...</strong>
+      </p>
+    </header>
+
+    <!-- Countdown Display -->
+    <div class="countdown-grid">
+      <div class="time-box">
+        <span class="number" id="days">00</span>
+        <span class="label">Days</span>
+      </div>
+
+      <div class="time-box">
+        <span class="number" id="hours">00</span>
+        <span class="label">Hours</span>
+      </div>
+
+      <div class="time-box">
+        <span class="number" id="minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+
+      <div class="time-box">
+        <span class="number" id="seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+
+    <!-- Dynamic Target Date & Message Input -->
+    <div class="input-section">
+      <div class="input-field">
+        <label for="datetime-input" class="input-label">Set Custom Target Date & Time:</label>
+        <input type="datetime-local" id="datetime-input" aria-label="Target Date and Time">
+      </div>
+
+      <div class="input-field">
+        <label for="message-input" class="input-label">Set Custom Completion Message:</label>
+        <div class="input-group">
+          <input type="text" id="message-input" placeholder="Enter message when timer ends..." value="🎉 Time's up! The countdown has ended. Happy New Year!" aria-label="Completion Message">
+          <button id="set-date-btn" type="button">Start</button>
+          <button id="reset-btn" type="button">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message shown when countdown reaches zero -->
+    <div id="message" class="message hidden">
+      🎉 Time's up! The countdown has ended. Happy New Year!
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
